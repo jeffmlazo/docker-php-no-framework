@@ -1,0 +1,13 @@
+{
+    "name": "jeprox/swisshealthychoice",
+    "authors": [
+        {
+            "name": "Jeprox",
+            "email": "jeffmlazo@yahoo.com"
+        }
+    ],
+    "require": {
+        "fitboxmedia/konnektive-api": "^2.0",
+        "vlucas/phpdotenv": "^5.1"
+    }
+}
