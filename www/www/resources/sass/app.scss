@@ -1,0 +1,10 @@
+// Overide the bootsrap default styles
+$primary: rgb(165, 22, 82);
+@import "~bootstrap/scss/bootstrap";
+
+$bgcolor: #aaa484;
+
+body {
+    background: $bgcolor;
+    font-size: 25px;
+}
