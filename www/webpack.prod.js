@@ -17,17 +17,17 @@ module.exports = merge(common, {
     minimizer: [
       new OptimizeCssAssetsWebpackPlugin(),
       new TerserWebpackPlugin(),
+      new HtmlWebpackPlugin({
+        template: "./resources/views/template.html",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./resources/views/template.html",
-      minify: {
-        removeAttributeQuotes: true,
-        collapseWhitespace: true,
-        removeComments: true,
-      },
-    }),
     new MiniCssExtractPlugin({
       filename: "[name].[contentHash].css",
     }),
